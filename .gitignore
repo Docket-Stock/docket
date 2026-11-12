@@ -1,0 +1,6 @@
+node_modules
+.wrangler
+.dev.vars
+data/backfill.json
+data/backfill.sql
+data/backfill.log

@@ -1,0 +1,32 @@
+# DOCKET: site + API + SEC poller + Telegram bot in one Worker. Deploy: npx wrangler deploy
+name = "docket"
+main = "src/index.js"
+compatibility_date = "2026-10-23"
+workers_dev = true
+routes = [
+  { pattern = "docketstock.com", custom_domain = true },
+  { pattern = "www.docketstock.com", custom_domain = true },
+]
+
+[assets]
+directory = "../site"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/rss", "/tg/*", "/admin/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "docket"
+database_id = "28377751-e8d5-4986-943e-2cadf59ed85c"
+
+[triggers]
+# every 5 minutes: read new filings and send alerts; once a day: re-read followed wallets
+crons = ["*/5 * * * *", "17 5 * * *"]
+
+[vars]
+# Telegram bot username without @ (shown on the site). Alerts need the secrets too.
+BOT_NAME = ""
+# Secrets (not here):
+#   npx wrangler secret put TG_TOKEN     (from @BotFather)
+#   npx wrangler secret put TG_SECRET    (any long random string, the webhook path)
+#   npx wrangler secret put ADMIN_KEY    (any long random string, for /admin/poll)
+#   npx wrangler secret put RH_RPC_URL   (optional keyed Robinhood Chain RPC)
