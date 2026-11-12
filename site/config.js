@@ -6,7 +6,7 @@ window.DOCKET_CONFIG = {
   rpc: 'https://rpc.mainnet.chain.robinhood.com',
   tokenAddress: '',
   links: {
-    x: '',
+    x: 'https://x.com/docketstock',
     github: 'https://github.com/Docket-Stock/docket',
     // built from tokenAddress when left empty
     pons: '',
