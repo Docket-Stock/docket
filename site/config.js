@@ -4,12 +4,11 @@ window.DOCKET_CONFIG = {
   api: '',
   // Public Robinhood Chain RPC, used in the browser to read a wallet's balances.
   rpc: 'https://rpc.mainnet.chain.robinhood.com',
-  tokenAddress: '',
+  tokenAddress: '0x3ddd057339d4a93016e5b57f989100c72d43ad3c',
   links: {
     x: 'https://x.com/docketstock',
     github: 'https://github.com/Docket-Stock/docket',
-    // built from tokenAddress when left empty
-    pons: '',
+    pons: 'https://ponsfamily.com/launchpad/0x3ddd057339d4a93016e5b57f989100c72d43ad3c',
   },
   explorer: 'https://robinhoodchain.blockscout.com',
   // Pons v2 launches mint a fixed 1,000,000,000.

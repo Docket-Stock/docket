@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const SITE = (process.env.SITE_URL || 'https://docketstock.com').replace(/\/$/, '');
-const V = 3; // bump to refresh cached css, js and the preview image
+const V = 4; // bump to refresh cached css, js and the preview image
 const out = path.join(path.dirname(fileURLToPath(import.meta.url)), 'site');
 
 const NAV = [

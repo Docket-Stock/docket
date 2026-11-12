@@ -67,6 +67,16 @@ SEC asks every client for a User-Agent with contact details. Set your own in `wo
 
 DOCKET shows what public filings say. An entry is not a forecast and not investment advice. Stock tokens are issued by Robinhood Assets (Jersey) Limited and are not available to US persons or in several other places. DOCKET is not affiliated with Robinhood, Pons, the SEC, or any company shown.
 
+## Token
+
+$DOCKET is live on Pons, Robinhood Chain (chain 4663).
+
+```
+0x3ddd057339d4a93016e5b57f989100c72d43ad3c
+```
+
+The same address is on [docketstock.com/token](https://docketstock.com/token.html), in the bio and the launch post on [x.com/docketstock](https://x.com/docketstock), and here. If they do not match, it is not ours. Trade it on [Pons](https://ponsfamily.com/launchpad/0x3ddd057339d4a93016e5b57f989100c72d43ad3c). The site stays free and needs no token.
+
 ## License
 
 MIT
